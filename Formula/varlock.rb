@@ -6,25 +6,25 @@ class Varlock < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/dmno-dev/varlock/releases/download/varlock@#{version}/varlock-#{version}-macos-x64.tar.gz"
-      sha256 "b9799f7ec5ad8f26f9af461ac04368bfb18c318c6a752f6e84e61fed8fa37738"
+      url "https://github.com/dmno-dev/varlock/releases/download/varlock@#{version}/varlock-macos-x64.tar.gz"
+      sha256 "285733195d5bb2fdcb8d3127d1afbeb4b5dda8d6687555d89a06724f9ed3dfaa"
     end
 
     on_arm do
-      url "https://github.com/dmno-dev/varlock/releases/download/varlock@#{version}/varlock-#{version}-macos-arm64.tar.gz"
-      sha256 "345ae135c65e48d96c2f3884ab5469b38c506175d37f1ea39ede8a2837f43419"
+      url "https://github.com/dmno-dev/varlock/releases/download/varlock@#{version}/varlock-macos-arm64.tar.gz"
+      sha256 "9450468a772a6d66d2e924b1abaf8844e8850add7454e2d4db7689cf34a4648d"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/dmno-dev/varlock/releases/download/varlock@#{version}/varlock-#{version}-linux-x64.tar.gz"
-      sha256 "e54ec26d8a24a6393cbaa866faaeaac9527f4b389c8b354f5eb179b64f004400"
+      url "https://github.com/dmno-dev/varlock/releases/download/varlock@#{version}/varlock-linux-x64.tar.gz"
+      sha256 "5bd5aaa32d5d8261526233f0c79b383b7be6912f262d01549cf9165055d9335a"
     end
 
     on_arm do
-      url "https://github.com/dmno-dev/varlock/releases/download/varlock@#{version}/varlock-#{version}-linux-arm64.tar.gz"
-      sha256 "0047c473bd31fb7050743ca811e060f2ac82e85a6d3d3c42548c1561a6dc111e"
+      url "https://github.com/dmno-dev/varlock/releases/download/varlock@#{version}/varlock-linux-arm64.tar.gz"
+      sha256 "686f7f6961a7d81e5e63a7656bc0600525822d5951d00daea5ad2e58c07ef25c"
     end
   end
 
