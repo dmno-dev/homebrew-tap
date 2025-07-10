@@ -3,29 +3,29 @@ class Varlock < Formula
   desc "varlock is a tool to load and validate .env files"
   homepage "https://varlock.dev"
   # ! the version number in this file is fetched and used by our install.sh script
-  version "refs/tags/@varlock/nextjs-integration@0.0.1"
+  version "refs/tags/@env-spec/parser@0.0.2"
 
   on_macos do
     on_intel do
       url "https://github.com/dmno-dev/varlock/releases/download/varlock@#{version}/varlock-macos-x64.tar.gz"
-      sha256 "63ce855770059fa9ccd555bc9bd2c3204a561f2850fd88dede6e5ba6f73b6661"
+      sha256 "cdb406aebf0265005dfa710ed3feb26faf3b6e9ada7e9e94d586eb6b475c4d1a"
     end
 
     on_arm do
       url "https://github.com/dmno-dev/varlock/releases/download/varlock@#{version}/varlock-macos-arm64.tar.gz"
-      sha256 "4fc96d52f4c4417e882607f825a74d42d88805c224f888e9a995aeb415548aa4"
+      sha256 "e86a85d93497d20f3d484c1dbeeabb8c0d1c61a21ecde0cf36516251d3b90efa"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/dmno-dev/varlock/releases/download/varlock@#{version}/varlock-linux-x64.tar.gz"
-      sha256 "8e2e03bf41ff70ebb6a35c4c308892b38595ebfb495e0721a4e9b65be8d1c327"
+      sha256 "12a9714f299894241de93f0eaa4e3c50f889e4f9e124d9188c176c0d885ad9af"
     end
 
     on_arm do
       url "https://github.com/dmno-dev/varlock/releases/download/varlock@#{version}/varlock-linux-arm64.tar.gz"
-      sha256 "112278041631cf276ed604046359df2186e5942211fc57bd6dd23daf9ec6b2ac"
+      sha256 "8c869e317e6c4cec4c458279010ee9fecb09661ad1a203cc6e28ca6ca382d357"
     end
   end
 
