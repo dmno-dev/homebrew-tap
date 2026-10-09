@@ -3,29 +3,29 @@ class Varlock < Formula
   desc "varlock is a tool to load and validate .env files"
   homepage "https://varlock.dev"
   # ! the version number in this file is fetched and used by our install.sh script
-  version "1.21.1"
+  version "1.22.0"
 
   on_macos do
     on_intel do
       url "https://github.com/dmno-dev/varlock/releases/download/varlock@#{version}/varlock-macos-x64.tar.gz"
-      sha256 "5b161be4d6d6532c20f2810ba433b99f60f10c5b7325675961ca586bd08c3c67"
+      sha256 "85a56717c22420bded92eb6510c63a5d464420b9a3babe9902bedaf58955ca06"
     end
 
     on_arm do
       url "https://github.com/dmno-dev/varlock/releases/download/varlock@#{version}/varlock-macos-arm64.tar.gz"
-      sha256 "9fb3779c658d77e0e68265f6a28b8350fca0add9c3c719e7970ea9a2ecc4b1b7"
+      sha256 "4595d210c8959d26a047fcc5f863cd3df552912daa80ac53c791c081ee618202"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/dmno-dev/varlock/releases/download/varlock@#{version}/varlock-linux-x64.tar.gz"
-      sha256 "3920b4696e1922287402113dad73a31b7dea94973ccbba8f2628020a20d2243a"
+      sha256 "fdc2c31ac1aba6549808d4c2393046d1bd63b9996231aaa449f8d6a52a9ab0b0"
     end
 
     on_arm do
       url "https://github.com/dmno-dev/varlock/releases/download/varlock@#{version}/varlock-linux-arm64.tar.gz"
-      sha256 "01dfd04aa833c445e1f11d7206f80b4ef5f7793161abcd1cc5b76e3b9346225c"
+      sha256 "9a6275afb37ba0b1a6c0a194ae08f346b20f11de4f3a876fd695195986e5940e"
     end
   end
 
@@ -42,6 +42,6 @@ class Varlock < Formula
   end
 
   test do
-    assert_equal "1.21.1", shell_output("#{bin}/varlock --post-install brew").strip
+    assert_equal "1.22.0", shell_output("#{bin}/varlock --post-install brew").strip
   end
 end
